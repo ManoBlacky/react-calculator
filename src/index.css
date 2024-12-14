@@ -1,0 +1,94 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* body color */
+  --body-color: #e3e9ec;
+
+  /* main choose color */
+  --main-color: #f4ab41;
+
+  /* light theme colors */
+  --light-theme: #f8f9f9;
+  --btn-bg-color: #bac3c0;
+  --btn-color: #3e4645;
+
+  /* dark theme */
+  --dark-theme: #4b6e7a;
+  /* --btn-bg-color: #555a60; */
+  --dark-btn-bg-color: #999A9A;
+}
+
+body {
+  height: 95vh;
+  background-color: var(--body-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", serif;
+  user-select: none;
+}
+
+.screen {
+  display: flex;
+  justify-content: end;
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 4rem;
+  height: 4rem;
+  color: var(--main-color);
+}
+
+.wrapper {
+  width: 320px;
+  background-color: var(--light-theme);
+  padding: 20px;
+  border-radius: 2rem;
+  box-shadow: 10px 15px 14px 0px rgba(0, 0, 0, 0.1);
+}
+
+.buttonBox {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  height: 3.5rem;
+  border-radius: 50px;
+  font-size: 20px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--btn-color);
+
+  &:hover {
+    border: 2px dotted var(--main-color);
+  }
+}
+
+.equal {
+  background: var(--body-color);
+  color: var(--main-color);
+  grid-column: 3/5;
+}
+
+.opt {
+  color: var(--main-color);
+  background: var(--body-color);
+}
+
+.ac-btn {
+  color: var(--main-color);
+}
